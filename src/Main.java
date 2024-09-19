@@ -1,11 +1,15 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        boolean quit = false;
+        Hotel hotel = new Hotel("Cats & Dogs",6,"SL");
 
+        hotel.getHotelDetails();
 
-        Boolean quit = false;
+        System.out.println("\nRooms Initialized");
 
         while (!quit) {
             System.out.println("\nEnter 'A' to add customer to a room\nEnter 'V' to view all rooms\nEnter 'Q' to quit");
@@ -28,9 +32,5 @@ public class Main {
                     break;
             }
         }
-    }
-
-    private static void initializeRooms() {
-
     }
 }
