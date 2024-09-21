@@ -18,7 +18,7 @@ public class Main {
 
             switch (option) {
                 case "A":
-                    System.out.println("\nCustomer added");
+                    hotel.addGuestToRoom();
                     break;
                 case "V":
                     System.out.println("\nShowing all rooms");

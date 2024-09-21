@@ -3,12 +3,16 @@ public class Room {
     private int capacity;
     private double price;
     private String roomType;
+    private Guest guest;
+    private int noOfGuests;
 
-    public Room(int roomNumber, int capacity, double price, String roomType) {
+    public Room(int roomNumber, int capacity, double price, String roomType, Guest guest, int noOfGuests) {
         this.roomNumber = roomNumber;
         this.capacity = capacity;
         this.price = price;
         this.roomType = roomType;
+        this.guest = guest;
+        this.noOfGuests = noOfGuests;
     }
 
     public int getRoomNumber() {
@@ -41,6 +45,22 @@ public class Room {
 
     public void setRoomType(String roomType) {
         this.roomType = roomType;
+    }
+
+    public Guest getGuest() {
+        return guest;
+    }
+
+    public void setGuest(Guest guest) {
+        this.guest = guest;
+    }
+
+    public int getNoOfGuests() {
+        return noOfGuests;
+    }
+
+    public void setNoOfGuests(int noOfGuests) {
+        this.noOfGuests = noOfGuests;
     }
 
     @Override
